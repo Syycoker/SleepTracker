@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "/cIzfe9FCIf7l6cfvHmjk9+yUlTazEV8XTwmJ7YogP6gjnLTkHFInq5oLqZV2YVLZYEDdG8+EAbg0f62ceJ+Qw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\coker\\source\\repos\\SleepTracker\\SleepTracker\\SleepTracker.iOS\\SleepTracker.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\coker\\.nuget\\packages\\skiasharp\\2.80.2\\skiasharp.2.80.2.nupkg.sha512",
+    "C:\\Users\\coker\\.nuget\\packages\\skiasharp.views\\2.80.2\\skiasharp.views.2.80.2.nupkg.sha512",
+    "C:\\Users\\coker\\.nuget\\packages\\skiasharp.views.forms\\2.80.2\\skiasharp.views.forms.2.80.2.nupkg.sha512",
+    "C:\\Users\\coker\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\coker\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\coker\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
+  ],
+  "logs": []
+}

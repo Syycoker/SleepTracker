@@ -1,0 +1,16 @@
+C:\Users\coker\source\repos\SleepTracker\SleepTracker\SleepTracker\bin\Debug\netstandard2.0\SleepTracker.deps.json
+C:\Users\coker\source\repos\SleepTracker\SleepTracker\SleepTracker\bin\Debug\netstandard2.0\SleepTracker.dll
+C:\Users\coker\source\repos\SleepTracker\SleepTracker\SleepTracker\bin\Debug\netstandard2.0\ref\SleepTracker.dll
+C:\Users\coker\source\repos\SleepTracker\SleepTracker\SleepTracker\bin\Debug\netstandard2.0\SleepTracker.pdb
+C:\Users\coker\source\repos\SleepTracker\SleepTracker\SleepTracker\obj\Debug\netstandard2.0\SleepTracker.csprojAssemblyReference.cache
+C:\Users\coker\source\repos\SleepTracker\SleepTracker\SleepTracker\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\coker\source\repos\SleepTracker\SleepTracker\SleepTracker\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+C:\Users\coker\source\repos\SleepTracker\SleepTracker\SleepTracker\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\coker\source\repos\SleepTracker\SleepTracker\SleepTracker\obj\Debug\netstandard2.0\SleepTracker.AssemblyInfoInputs.cache
+C:\Users\coker\source\repos\SleepTracker\SleepTracker\SleepTracker\obj\Debug\netstandard2.0\SleepTracker.AssemblyInfo.cs
+C:\Users\coker\source\repos\SleepTracker\SleepTracker\SleepTracker\obj\Debug\netstandard2.0\SleepTracker.csproj.CoreCompileInputs.cache
+C:\Users\coker\source\repos\SleepTracker\SleepTracker\SleepTracker\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\coker\source\repos\SleepTracker\SleepTracker\SleepTracker\obj\Debug\netstandard2.0\SleepTracker.dll
+C:\Users\coker\source\repos\SleepTracker\SleepTracker\SleepTracker\obj\Debug\netstandard2.0\ref\SleepTracker.dll
+C:\Users\coker\source\repos\SleepTracker\SleepTracker\SleepTracker\obj\Debug\netstandard2.0\SleepTracker.pdb
+C:\Users\coker\source\repos\SleepTracker\SleepTracker\SleepTracker\obj\Debug\netstandard2.0\TimeSelect.xaml.g.cs
