@@ -10,11 +10,14 @@ using Xamarin.Forms;
 namespace SleepTracker
 {
     public partial class MainPage : ContentPage
-    {
+    {   
+        bool tickedOnce = false;
+        DateTime TestTwo;
+
         public MainPage()
         {
             InitializeComponent();
-            /*
+            
             Device.StartTimer(TimeSpan.FromSeconds(1 / 60f), () =>
             {
                 canvasView.InvalidateSurface();
@@ -28,29 +31,36 @@ namespace SleepTracker
 
                 return true;
             });
-            */
-            Device.StartTimer(TimeSpan.FromSeconds(1), OnTimerTick);
 
-            
+            MVVM helpMe = new MVVM();
+            TimeSpan testOne = helpMe.userSpan;
+            DateTime today = DateTime.Today;
+            DateTime alarmDate = new DateTime(today.Year, today.Month,today.Day,testOne.Hours, testOne.Minutes, testOne.Seconds);
+            TestTwo = alarmDate;
+
+            Console.WriteLine("Sylas: " + testOne);
+
+            Device.StartTimer(TimeSpan.FromSeconds(1), () =>
+            {
+                OnTimerTick();
+                return true; // runs again, or false to stop
+            });
 
         }
 
         SKPath path = new SKPath();
         float arcLength = 105;
-        private static DateTime GetNextAlarm()
-        {
-            return MVVM.futureDate;
-        }
-
-        DateTime alarmDate = GetNextAlarm();
-
         
 
         private bool OnTimerTick()
         {
-            if (DateTime.Now >= alarmDate)
+            Console.WriteLine("This is the alarm Sylas: " + TestTwo);
+            Console.WriteLine("This is now: " + DateTime.Now);
+
+            if (DateTime.Now >= TestTwo && tickedOnce == false)
             {
                 DisplayAlert("Timer Alert", "The timer has elapsed", "OK");
+                tickedOnce = true;
                 return true;
             }
             else
@@ -125,7 +135,7 @@ namespace SleepTracker
             timeTxt.Text = dateTime.ToString("hh:mm");
             periodTxt.Text = dateTime.Hour >= 12 ? "PM" : "AM";
 
-            var alarmDiff = alarmDate - dateTime;
+            var alarmDiff = TestTwo - dateTime;
             alarmTxt.Text = $"{alarmDiff.Hours}h {alarmDiff.Minutes}m until next alarm";
 
         }

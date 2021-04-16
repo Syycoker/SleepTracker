@@ -17,6 +17,7 @@ namespace SleepTracker
         public TimeSelect()
         {
             InitializeComponent();
+            userSelectedTimeSpan = UserTimePicker.Time;
         }
 
         private async void SelectTime(object sender, EventArgs e)
