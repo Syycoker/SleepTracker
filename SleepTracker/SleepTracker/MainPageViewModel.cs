@@ -41,7 +41,7 @@ namespace SleepTracker
                 if (Bmi < 18.5) return "You are underweight - Recommended 8 hours sleep";
                 else if (Bmi < 25) return "You have a normal weight - Recommended 7 hours sleep";
                 else if (Bmi < 30) return "You are overweight - Recommended 6 hours sleep";
-                else return "You are obese";
+                else return "You are obese- Recommended 5-6 hours sleep";
             }
         }
 
