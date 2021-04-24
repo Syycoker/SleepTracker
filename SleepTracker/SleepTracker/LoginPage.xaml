@@ -6,12 +6,18 @@
         <StackLayout>
             <Label Text="Sleep Tracker"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Title" 
+                TextColor="Black"/>
 
             <Entry x:Name="UsernameEntry" Placeholder="Username" ReturnType="Next"/>
             <Entry x:Name="PasswordEntry" Placeholder="Password"/>
 
-            <Button x:Name="Login"/>
+            <Button x:Name="Login"
+                    Text="Next"
+                    Clicked="OnClick"/>
+
+            <Button x:Name="Alarm" Text="Set an Alarm" Clicked="toTimeSelect" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

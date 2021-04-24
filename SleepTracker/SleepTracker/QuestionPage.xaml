@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SleepTracker.QuestionPage"
+             BackgroundColor="AliceBlue">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Basic Information"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Title" TextColor="Black"
+                />
+
+            <Label Text="Name:" TextColor="Black"
+                VerticalOptions="StartAndExpand"
+                HorizontalOptions="StartAndExpand" FontSize="Medium" Margin="10,10,0,0" />
+            <Entry x:Name="NameEntry" Placeholder="Name" ReturnType="Next"/>
+
+            <Label Text="Age:" TextColor="Black"
+                VerticalOptions="StartAndExpand"
+                HorizontalOptions="StartAndExpand" FontSize="Medium" Margin="10,10,0,0" />
+            <Entry x:Name="AgeEntry" Placeholder="Age" ReturnType="Next"/>
+
+            <Label Text="Average Sleep Hours Per Night:" TextColor="Black"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand" FontSize="Medium" Margin="10,10,0,0" />
+
+            <Entry x:Name="SleepHrs" Placeholder="Hours" ReturnType="Next"/>
+
+            <Label Text="Activity Level Per Week:" TextColor="Black"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand" FontSize="Medium" Margin="10,10,0,0" />
+
+            <RadioButton x:Name="Sedentry"  Content="Sedentary"
+                         IsChecked="True" FontSize="Small"/>
+            <RadioButton x:Name="Light" Content="Light (1-3 Times)" FontSize="Small"/>
+            <RadioButton x:Name="Moderate" Content="Moderate (3-5 Times)" FontSize="Small"/>
+            <RadioButton x:Name="Active" Content="Active (Daily)" FontSize="Small"/>
+
+            <Button Text="Next" 
+                Clicked="OnClick"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

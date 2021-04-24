@@ -14,7 +14,7 @@ namespace SleepTracker
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new TimeSelect());
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()

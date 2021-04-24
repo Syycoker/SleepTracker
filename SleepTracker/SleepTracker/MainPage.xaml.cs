@@ -54,10 +54,7 @@ namespace SleepTracker
 
         private bool OnTimerTick()
         {
-            Console.WriteLine("This is the alarm Sylas: " + TestTwo);
-            Console.WriteLine("This is now: " + DateTime.Now);
-
-            if (DateTime.Now >= TestTwo && tickedOnce == false)
+            if (DateTime.Now >= overlapCheck(TestTwo) && tickedOnce == false)
             {
                 DisplayAlert("Timer Alert", "The timer has elapsed", "OK");
                 tickedOnce = true;
@@ -65,6 +62,16 @@ namespace SleepTracker
             }
             else
                 return false;
+        }
+
+        private DateTime overlapCheck(DateTime overallTime)
+        {
+            if (overallTime <= DateTime.Now)
+            {
+                return new DateTime(overallTime.Year, overallTime.Month, overallTime.Day + 1, overallTime.Hour, overallTime.Minute, overallTime.Second);
+            }
+            else
+                return overallTime;
         }
 
         private SKPaint GetPaintColor(SKPaintStyle style, string hexColor, float strokeWidth = 0, SKStrokeCap cap = SKStrokeCap.Round, bool IsAntialias = true)

@@ -16,11 +16,14 @@ namespace SleepTracker
         {
             InitializeComponent();
         }
-        /*
-        private async void GoToQuestionsPage(object sender, EventArgs e)
+        private async void OnClick(object sender, EventArgs e)
         {
-            //await Navigation.PushAsync(new QuestionsPage());
+            await Navigation.PushAsync(new QuestionPage());
         }
-        */
+
+        private async void toTimeSelect(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new TimeSelect());
+        }
     }
 }
