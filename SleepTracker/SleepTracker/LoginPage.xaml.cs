@@ -25,5 +25,9 @@ namespace SleepTracker
         {
             await Navigation.PushAsync(new TimeSelect());
         }
+        private async void toBMI(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new BmiPage());
+        }
     }
 }

@@ -18,6 +18,8 @@
                     Clicked="OnClick"/>
 
             <Button x:Name="Alarm" Text="Set an Alarm" Clicked="toTimeSelect" />
+
+            <Button x:Name="BMI" Text="Check BMI" Clicked="toBMI" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
