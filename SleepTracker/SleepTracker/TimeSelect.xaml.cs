@@ -13,17 +13,28 @@ namespace SleepTracker
     public partial class TimeSelect : ContentPage
     {
         public static TimeSpan userSelectedTimeSpan;
-        
+        public static DateTime userSelectedDateTime;
         public TimeSelect()
         {
-            InitializeComponent();
-            userSelectedTimeSpan = UserTimePicker.Time;
+            InitializeComponent();    
         }
 
         private async void SelectTime(object sender, EventArgs e)
         {
             userSelectedTimeSpan = UserTimePicker.Time;
+            userSelectedDateTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, userSelectedTimeSpan.Hours, userSelectedTimeSpan.Minutes, userSelectedTimeSpan.Seconds);
+            userSelectedDateTime = overlapCheck(userSelectedDateTime);
             await Navigation.PushAsync(new MainPage());
+        }
+
+        private DateTime overlapCheck(DateTime overallTime)
+        {
+            if (overallTime <= DateTime.Now)
+            {
+                return new DateTime(overallTime.Year, overallTime.Month, overallTime.Day + 1, overallTime.Hour, overallTime.Minute, overallTime.Second);
+            }
+            else
+                return overallTime;
         }
     }
 }

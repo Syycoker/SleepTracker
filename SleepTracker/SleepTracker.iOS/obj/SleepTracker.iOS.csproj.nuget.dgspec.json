@@ -44,9 +44,21 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
+            "Microcharts": {
+              "target": "Package",
+              "version": "[0.9.5.9, )"
+            },
+            "Microcharts.Forms": {
+              "target": "Package",
+              "version": "[0.9.5.9, )"
+            },
             "SkiaSharp.Views.Forms": {
               "target": "Package",
               "version": "[2.80.2, )"
+            },
+            "Syncfusion.Licensing": {
+              "target": "Package",
+              "version": "[19.1.0.57, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -117,6 +129,14 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Microcharts": {
+              "target": "Package",
+              "version": "[0.9.5.9, )"
+            },
+            "Microcharts.Forms": {
+              "target": "Package",
+              "version": "[0.9.5.9, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -126,6 +146,10 @@
             "SkiaSharp.Views.Forms": {
               "target": "Package",
               "version": "[2.80.2, )"
+            },
+            "Syncfusion.Licensing": {
+              "target": "Package",
+              "version": "[19.1.0.57, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",

@@ -17,3 +17,4 @@ C:\Users\coker\source\repos\SleepTracker\SleepTracker\SleepTracker\obj\Debug\net
 C:\Users\coker\source\repos\SleepTracker\SleepTracker\SleepTracker\obj\Debug\netstandard2.0\HomePage.xaml.g.cs
 C:\Users\coker\source\repos\SleepTracker\SleepTracker\SleepTracker\obj\Debug\netstandard2.0\QuestionPage.xaml.g.cs
 C:\Users\coker\source\repos\SleepTracker\SleepTracker\SleepTracker\obj\Debug\netstandard2.0\BmiPage.xaml.g.cs
+C:\Users\coker\source\repos\SleepTracker\SleepTracker\SleepTracker\obj\Debug\netstandard2.0\ChartPage.xaml.g.cs

@@ -16,10 +16,16 @@ namespace SleepTracker
         {
             InitializeComponent();
         }
-
+        /*
         private async void OnClick(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new HomePage(NameEntry.Text, Int32.Parse(AgeEntry.Text), Int32.Parse(SleepHrs.Text)));
+        }
+        */
+
+        private async void OnClick(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ChartPage());
         }
     }
 }

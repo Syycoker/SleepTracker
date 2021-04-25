@@ -1,6 +1,9 @@
 SleepTracker.Droid.MainActivity, SleepTracker.Android;crc64b368ebd8425d3163.MainActivity
 SleepTracker.Droid.MainActivity;crc64b368ebd8425d3163.MainActivity
 sleeptracker.droid.MainActivity;crc64b368ebd8425d3163.MainActivity
+Microcharts.Droid.ChartView, Microcharts.Droid;crc64e9f97cf19b8286a9.ChartView
+Microcharts.Droid.ChartView;crc64e9f97cf19b8286a9.ChartView
+microcharts.droid.ChartView;crc64e9f97cf19b8286a9.ChartView
 SkiaSharp.Views.Android.GLTextureView, SkiaSharp.Views.Android;crc648e35430423bd4943.GLTextureView
 SkiaSharp.Views.Android.GLTextureView;crc648e35430423bd4943.GLTextureView
 skiasharp.views.android.GLTextureView;crc648e35430423bd4943.GLTextureView

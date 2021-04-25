@@ -9,14 +9,48 @@
     ".NETStandard,Version=v2.0/": {
       "SleepTracker/1.0.0": {
         "dependencies": {
+          "Microcharts": "0.9.5.9",
+          "Microcharts.Forms": "0.9.5.9",
           "NETStandard.Library": "2.0.3",
           "SkiaSharp.Views.Forms": "2.80.2",
+          "Syncfusion.Licensing": "19.1.0.57",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
           "Xamarin.Forms.PancakeView": "2.3.0.759"
         },
         "runtime": {
           "SleepTracker.dll": {}
+        }
+      },
+      "Microcharts/0.9.5.9": {
+        "dependencies": {
+          "SkiaSharp": "2.80.2",
+          "System.ValueTuple": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microcharts.dll": {
+            "assemblyVersion": "0.9.5.1",
+            "fileVersion": "0.9.5.1"
+          }
+        }
+      },
+      "Microcharts.Forms/0.9.5.9": {
+        "dependencies": {
+          "Microcharts": "0.9.5.9",
+          "SkiaSharp": "2.80.2",
+          "SkiaSharp.Views.Forms": "2.80.2",
+          "System.ValueTuple": "4.5.0",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microcharts.Forms.dll": {
+            "assemblyVersion": "0.9.5.1",
+            "fileVersion": "0.9.5.1"
+          },
+          "lib/netstandard2.0/Microcharts.dll": {
+            "assemblyVersion": "0.9.5.1",
+            "fileVersion": "0.9.5.1"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
@@ -41,6 +75,14 @@
         "dependencies": {
           "SkiaSharp": "2.80.2",
           "Xamarin.Forms": "5.0.0.2012"
+        }
+      },
+      "Syncfusion.Licensing/19.1.0.57": {
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "19.1.0.57",
+            "fileVersion": "19.1.0.57"
+          }
         }
       },
       "System.Buffers/4.4.0": {
@@ -97,6 +139,7 @@
           }
         }
       },
+      "System.ValueTuple/4.5.0": {},
       "Xamarin.Essentials/1.6.1": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -144,6 +187,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Microcharts/0.9.5.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oiaPjsC+l211tRXw17bxT7D1uPHLZG4wZq7w9h9w7LFX76s4ppLN9UGVkUQJ2vBammdFH0JXtbvEUVtbOq85UQ==",
+      "path": "microcharts/0.9.5.9",
+      "hashPath": "microcharts.0.9.5.9.nupkg.sha512"
+    },
+    "Microcharts.Forms/0.9.5.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qWph+JII7fWqx/ObgqT0IQ9ICGTHSUfvXT1l+Yf/LlLK4DAhDdvn0AKKUatz2uvHy1xHmzBFS+nzdreOpBA2Vw==",
+      "path": "microcharts.forms/0.9.5.9",
+      "hashPath": "microcharts.forms.0.9.5.9.nupkg.sha512"
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
       "serviceable": true,
@@ -178,6 +235,13 @@
       "sha512": "sha512-8aRDb98O2cHymB94O8FBj85qMC+MYEY6591wBpHcwgfz4HMo4orSMApD5y8VDmHpA5KR0Yh2ija+HTylz/9CgA==",
       "path": "skiasharp.views.forms/2.80.2",
       "hashPath": "skiasharp.views.forms.2.80.2.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/19.1.0.57": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-95dDhD9i5vhVN3ggMX6c3Z7ekZcgJftgr6CSTRv9FGPx7biJKny4vj7Oo7Azvvs0Dbv7BGqjv/ggjBBLmrv9nw==",
+      "path": "syncfusion.licensing/19.1.0.57",
+      "hashPath": "syncfusion.licensing.19.1.0.57.nupkg.sha512"
     },
     "System.Buffers/4.4.0": {
       "type": "package",
@@ -220,6 +284,13 @@
       "sha512": "sha512-wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
       "path": "system.runtime.compilerservices.unsafe/4.5.2",
       "hashPath": "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
+    },
+    "System.ValueTuple/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "path": "system.valuetuple/4.5.0",
+      "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
     },
     "Xamarin.Essentials/1.6.1": {
       "type": "package",

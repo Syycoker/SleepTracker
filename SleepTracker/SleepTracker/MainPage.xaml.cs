@@ -12,7 +12,7 @@ namespace SleepTracker
     public partial class MainPage : ContentPage
     {   
         bool tickedOnce = false;
-        DateTime TestTwo;
+        DateTime futureDate;
 
         public MainPage()
         {
@@ -32,13 +32,8 @@ namespace SleepTracker
                 return true;
             });
 
-            MVVM helpMe = new MVVM();
-            TimeSpan testOne = helpMe.userSpan;
-            DateTime today = DateTime.Today;
-            DateTime alarmDate = new DateTime(today.Year, today.Month,today.Day,testOne.Hours, testOne.Minutes, testOne.Seconds);
-            TestTwo = alarmDate;
-
-            Console.WriteLine("Sylas: " + testOne);
+            DateTime alarmDate = TimeSelect.userSelectedDateTime;
+            futureDate = alarmDate;
 
             Device.StartTimer(TimeSpan.FromSeconds(1), () =>
             {
@@ -54,7 +49,8 @@ namespace SleepTracker
 
         private bool OnTimerTick()
         {
-            if (DateTime.Now >= overlapCheck(TestTwo) && tickedOnce == false)
+            Console.WriteLine("Sylas this is the time " + futureDate);
+            if (DateTime.Now >= futureDate && tickedOnce == false)
             {
                 DisplayAlert("Timer Alert", "The timer has elapsed", "OK");
                 tickedOnce = true;
@@ -62,16 +58,6 @@ namespace SleepTracker
             }
             else
                 return false;
-        }
-
-        private DateTime overlapCheck(DateTime overallTime)
-        {
-            if (overallTime <= DateTime.Now)
-            {
-                return new DateTime(overallTime.Year, overallTime.Month, overallTime.Day + 1, overallTime.Hour, overallTime.Minute, overallTime.Second);
-            }
-            else
-                return overallTime;
         }
 
         private SKPaint GetPaintColor(SKPaintStyle style, string hexColor, float strokeWidth = 0, SKStrokeCap cap = SKStrokeCap.Round, bool IsAntialias = true)
@@ -142,7 +128,7 @@ namespace SleepTracker
             timeTxt.Text = dateTime.ToString("hh:mm");
             periodTxt.Text = dateTime.Hour >= 12 ? "PM" : "AM";
 
-            var alarmDiff = TestTwo - dateTime;
+            var alarmDiff = futureDate - dateTime;
             alarmTxt.Text = $"{alarmDiff.Hours}h {alarmDiff.Minutes}m until next alarm";
 
         }

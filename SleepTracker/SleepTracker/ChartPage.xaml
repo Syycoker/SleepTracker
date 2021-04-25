@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="SleepTracker.ChartPage">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="timeSleptLabel" Text="Start Tracking Sleep" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+            <Button x:Name="timeSleptButton" Text="Click Here To Start" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="SleepButton_Clicked"/>
+            <Label x:Name="timeWokeLabel" Text="Stop Tracking Sleep" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+            <Button x:Name="timeWokeButton" Text="Click Here To Stop" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="Button_Clicked"/>
+            <microcharts:ChartView x:Name="ChartView" HeightRequest ="300"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
