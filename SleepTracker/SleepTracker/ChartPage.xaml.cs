@@ -65,7 +65,7 @@ namespace SleepTracker
             chartEntry.Color = SKColor.Parse("#FF00FF"); //COULD MAKE TWO DIFFERENT COLOURS FOR POOR OR GOOD SLEEP
             Array.Resize(ref entries, entries.Length + 1); //incrases array one size biggers
             entries[entries.Length - 1] = chartEntry;
-
+            ChartView.Chart = new BarChart { Entries = entries };
         }
     }
 }
